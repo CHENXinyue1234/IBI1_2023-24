@@ -1,0 +1,5 @@
+Chen Xinyue Practical3 self reflection:
+In practical3, I have learnt version control and also navigated Unix-like systems.
+I have encountered several problems. I have had some problem when cloning my repositort. I asked my teacher for help and was very happy that I solved it in the end.
+During this course, I have learnt version control, how to navigate Unix-like systems and how to write simple programs in Python.
+Although I spent lot of time on this practical, I think it worth. In my spare time, I think I need to practice more and be more proficient.
