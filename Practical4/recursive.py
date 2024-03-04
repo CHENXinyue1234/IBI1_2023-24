@@ -4,6 +4,6 @@ def a(n):
          return 4
      else:
          return 2*a(n-1) + 3
-# to have the first five values
+# to have only the first five values
 for n in range (1,6):
     print (a(n))
