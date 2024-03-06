@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: This code is to randomly select a integer between 1 and 10 for 100 times and add the selected 100 numbers together. So the output values is between 100 and 1000.
+# Answer: This code is to randomly select a integer between 1 and 10 for 100 times and sum the selected 100 numbers together. So the output values is between 100 and 1000.
 
 # Import libraries
 # randint allows drawing a random number,
