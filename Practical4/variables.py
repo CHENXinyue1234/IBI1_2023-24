@@ -7,7 +7,10 @@ d <= e
 # Strength training had a greater improvement on running time.
 X = True
 Y = False
-W = X^Y
+if X == Y:
+    W = False
+else:
+    W = True
 print (W)
 # X     Y     either X or Y
 # True  True  False
