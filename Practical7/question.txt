@@ -1,3 +1,4 @@
 Are there places in the World where the DALYs in 2019 is less than 18,000? If so, where are they?
 Line number:27-31
-Explanations:Yes,it is what I expected. My first step is to select all the rows whose Year is 2019. Next, I compare the DALYs of these rows to 18000, and print out the Entitys of which their DALYs are smaller than 18000. I use ".to_string(index=False)" to prevent the index from being printed.
+Explanations:
+Yes,it is what I expected. DALYs is a measure of overall disease burden, expressed as the number of years lost due to ill-health, disability, or early death.My first step is to select all the rows whose Year is 2019. Next, I compare the DALYs of these rows to 18000, and print out the Entitys of which their DALYs are smaller than 18000. I use ".to_string(index=False)" to prevent the index from being printed.

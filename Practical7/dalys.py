@@ -2,7 +2,9 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-#这句话不行 os.chdir('\C\MyFiles\IBI\IBI_work\IBI1_2023-24\Practical7')
+os.chdir('D:/C/MyFiles/IBI/IBI_work/IBI1_2023-24/Practical7')
+os.getcwd()
+os.listdir()
 dalys_data = pd.read_csv("dalys-rate-from-all-causes(1).csv")
 #show the fourth column (the DALYs) from every 10th row
 print(dalys_data.iloc[0:101:10,3])
