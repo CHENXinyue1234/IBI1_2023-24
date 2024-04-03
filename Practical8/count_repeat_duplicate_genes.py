@@ -8,7 +8,7 @@ gene_sequence = ""
 for line in yfile:
     if line.startswith('>'):  
         if gene_name and gene_sequence:  
-            count = gene_sequence.count(input_sequence)
+            count = len(re.findall(input_sequence, gene_sequence))
             if count > 0: 
                 new_gene_name = f"{gene_name} {count}"
                 xfile.write(f">{new_gene_name[1:]}\n")
