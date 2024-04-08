@@ -20,5 +20,5 @@ with open("Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa", "r") as input_file, op
                 has_duplication = False
                 gene_description = ""
         elif has_duplication:
-            output_file.write(line)  
+            output_file.write(line) 
 print("New file 'duplicate_genes.fa' is created")
