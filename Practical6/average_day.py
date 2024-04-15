@@ -17,9 +17,9 @@ plt.show()
 # close the figure
 plt.clf()
 
-import random
-# Randomly select an activity
-random_key = random.choice(list(average_day))
-print('given activity :',random_key)
+
+#A given activity that can be modified
+given_activity= 'studying'
+print('given activity :',given_activity)
 # print the value of an given activity
-print('time used :',average_day[random_key],'h')
+print('time used :',average_day[given_activity],'h')
