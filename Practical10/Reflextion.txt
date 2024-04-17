@@ -1,0 +1,6 @@
+During the practical, I found the task of SIR to be both challenging and rewarding.
+At first, understanding the logic to track infections and recoveries without using a dedicated list for each iteration was a bit challenging. However, once I understood the approach of comparing new infections with the previous iteration's infected individuals, the process became clearer.
+I enjoyed solving the challenge of ensuring that only previously infected individuals were considered as recovered. It required clever use of list comprehension and set operations, which I found intellectually stimulating.
+One aspect that I found slightly less enjoyable was managing the iteration loop and ensuring that each step was executed correctly. However, this was an essential part of the task and contributed to a deeper understanding of the overall process.
+The most important thing I learned from this exercise was the importance of careful data management in iterative processes. By keeping track of relevant information from previous iterations and using it effectively in subsequent iterations, it's possible to achieve more accurate and efficient simulations.
+Overall, while the task presented its challenges, I found it to be an engaging and valuable learning experience.
