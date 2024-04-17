@@ -3,15 +3,14 @@ average_day={'sleeping':8,'classes':6,'studying':3.5,'TV':2,'music':1}
 # add an entry
 average_day['other']=3.5
 print(average_day)
-
+time= list(average_day.values())
+activity=list(average_day.keys())
 # Draw a pie chart
 import matplotlib.pyplot as plt
-# create lables
-activity_labels = ['sleeping','classes','studying','TV','music','other']
-# time used for an activity
-time_used = [8,6,3.5,2,1,3.5]
+
+
 plt.figure()
-plt.pie(time_used, labels = activity_labels)
+plt.pie(time, labels = activity,autopct='%1.1f%%')
 # show the figure
 plt.show()
 # close the figure
