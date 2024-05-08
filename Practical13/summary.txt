@@ -1,0 +1,19 @@
+Alignment score:
+    Human vs Mouse: 3137
+    Human vs Rat: 3107
+    Mouse vs Rat: 3261
+
+    Interpretation: The scores show how similar the SLC6A4 protein sequences are between humans, mice, and rats. The higher the score, the more similar the sequences. The highest score of 3261 indicates that the mouse and rat SLC6A4 protein sequences are the most similar among the three comparisons.
+
+Percentage of identical amino acids:
+    Human vs Mouse: 92.54%
+    Human vs Rat: 91.75%
+    Mouse vs Rat: 96.83%
+
+    Interpretation: This percentage tells us how many amino acids are the same between the two compaired species. A higher percentage means more amino acids are identical. An identity rate of 96.83% is the highest among the three comparisons, suggesting that the mouse and rat sequences are the most closely related at the amino acid level.
+
+Mouse and Rat are most closely related.
+    Interpretation: The highest alignment score and identity percentage between mouse and rat suggest they are the most closely related of the three species compared.
+
+Mouse is a better model organism for human.
+    Interpretation: Compared with rat, both the alignment score (3137 > 3107) and identity percentage (92.54% > 91.75%) are higher between human and mouse.
