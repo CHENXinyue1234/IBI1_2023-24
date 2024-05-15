@@ -46,6 +46,7 @@ plt.title('Occurrences of Each Ontology in go_obo.xml (SAX)',fontsize=15)
 for i, count in enumerate(counts):
     plt.text(i, count, str(count), ha='center', va='bottom')
 plt.show()
+plt.clf()
 
 
 
@@ -80,5 +81,6 @@ plt.title('Occurrences of Each Ontology in go_obo.xml (DOM)',fontsize=15)
 for i, count in enumerate(counts):
     plt.text(i, count, str(count), ha='center', va='bottom')
 plt.show()
+plt.clf()
 
 print('SAX ran fastest.')
