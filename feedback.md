@@ -1,0 +1,7 @@
+In week 4's culture_density.py, I corrected the wrong explanation. It takes 5 days for the density to go over 90%. However, the maximum number of days I can have a holiday from lab is 4, not 5. 
+
+In week 6's average_day.py, I made two changes based on the feedback:
+
+First, The feedback said that my pie chart data was hardcoded. To address this, I used a dictionary to store the activities and time spent on each. I extracted the values and keys of this dictionary to store the activities and time separately. For example, I used 'time= list(average_day.values())' to extract all the values (time) from the dictionary into a list called 'time'. Similarly, I used 'activity=list(average_day.keys())' to extract all the keys (activity) into a list called 'activity'.
+
+Second, the feedback also pointed out that I did not have a variable for an activity that could be modified and would return the correct number of hours. I initially, I was generating an activity randomly, rather than setting one that could be modified. So to solve this, instead of randomly generating an activity, I created a variable called 'given_activity' that contains an activity which can be modified.
