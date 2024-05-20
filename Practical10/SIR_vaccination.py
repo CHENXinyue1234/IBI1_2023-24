@@ -8,9 +8,10 @@ I=1
 R=0
 rate=[0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1]
 
-
+#set the color
 cmap = cm.plasma
 norm = Normalize(vmin=0, vmax=1)
+#use for loop to go through all the rate
 for x in rate:
     I=1
     R=0
@@ -21,6 +22,7 @@ for x in rate:
     Infected=[1]
     time=range(1001)
     if x!=1:
+        #use for loop to get infected, recovered
         for i in range(1000):
             additional_R=sum(np.random.choice(range(2),I,p=[1-gamma, gamma]))
             additional_I=sum(np.random.choice(range(2),S,p=[1-beta*I/N,beta*I/N]))
@@ -38,7 +40,7 @@ for x in rate:
             S=int(N-I-R)
             Infected.append(I)
         plt.plot(time, Infected,'y',label=str(int(x*100))+'%')
-
+#draw the figure
 plt.xlabel('Time')
 plt.ylabel('Number of people')
 plt.title('SIR model with different vaccination rate',fontsize=15)

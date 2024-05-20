@@ -1,5 +1,6 @@
 import numpy as np 
 import matplotlib.pyplot as plt
+#initialize
 N=10000
 Infected=[]
 Susceptible=[]
@@ -12,6 +13,7 @@ gamma=0.05
 Recovered.append(0)
 Infected.append(1)
 Susceptible.append(9999)
+#use for loop to get recovered, infected
 for i in range(1000):
     additional_R=sum(np.random.choice(range(2),I,p=[1-gamma, gamma]))
     additional_I=sum(np.random.choice(range(2),S,p=[1-beta*I/N,beta*I/N]))
@@ -23,7 +25,7 @@ for i in range(1000):
     Susceptible.append(S)
 
 
-
+#Draw the figure
 time=range(1001)
 plt.figure ( figsize =(6 ,4) , dpi=150) 
 plt.plot(time, Recovered, 'g',label='Recovered')
