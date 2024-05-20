@@ -1,3 +1,4 @@
+#SAX
 import xml.sax
 class GOHandler(xml.sax.ContentHandler):
     def __init__(self):
@@ -24,6 +25,7 @@ parser.setFeature(xml.sax.handler.feature_namespaces,0)
 handler = GOHandler()
 parser.setContentHandler(handler)
 
+#record the time
 import datetime
 start_time = datetime.datetime.now()
 parser.parse('go_obo.xml')
@@ -36,6 +38,7 @@ for ontology, count in handler.ontology_counts.items():
     print(f"{ontology}: {count}")
 print(f"Time used: {parsing_time} seconds")
 
+#draw the figure
 import matplotlib.pyplot as plt
 ontologies = list(handler.ontology_counts.keys())
 counts = list(handler.ontology_counts.values())
@@ -49,7 +52,7 @@ plt.show()
 plt.clf()
 
 
-
+#DOM
 import xml.dom.minidom
 start_time = datetime.datetime.now()
 dom_tree = xml.dom.minidom.parse('go_obo.xml')

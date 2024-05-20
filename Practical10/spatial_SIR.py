@@ -42,3 +42,4 @@ for k in range(100):
     if k % 10 == 0:
         plt.imshow(population , cmap=custom_cmap, interpolation='nearest')
         plt.show()
+        plt.clf()

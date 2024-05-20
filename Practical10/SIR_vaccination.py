@@ -44,7 +44,7 @@ plt.ylabel('Number of people')
 plt.title('SIR model with different vaccination rate',fontsize=15)
 plt.legend()
 plt.show()
-
+plt.clf()
 
 
     

@@ -1,10 +1,12 @@
-total_money=int(input('How much money do you have?'))
-price=int(input('What is the price of one chocolate bar?'))
+#function
 def affordability(money, price):
     number=money//price
-    return(number)
-def change(money, price):
     change=money%price
-    return(change)
-print('The number of bars you can buy is',affordability(total_money,price))
-print("You remaining change is",change(total_money,price))
+
+    return number,change
+#example to call the function
+total_money=100
+price=7
+number,change=affordability(total_money,price)
+print('The number of bars you can buy is',number)
+print('The change that will be left over is',change)

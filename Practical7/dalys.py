@@ -18,7 +18,7 @@ China_2019=China_rows.loc[China_rows['Year'] == 2019,'DALYs']
 print('China_mean:',China_mean)
 print('China_2019:',China_2019.iloc[0])
 #whether the DALYs in China in 2019 was greater or less than the mean
-if (China_mean >= China_2019.iloc[0]).any():
+if China_mean >= China_2019.iloc[0]:
     print('2019 was below the mean')
 else:
     print('2019 was above the mean')
@@ -33,4 +33,4 @@ plt.show()
 Year2019_rows = dalys_data.loc[dalys_data['Year']==2019]
 Selected_Year2019_Dalys = Year2019_rows.loc[Year2019_rows['DALYs'] < 18000,'Entity']
 print('Places in the World where the DALYs in 2019 is less than 18,000:')
-print(Selected_Year2019_Dalys.to_string(index=False))
+print(Selected_Year2019_Dalys.to_string(index=False)) #remove the index to make the output more clean (I learn the 'to_string' from the search engine)
