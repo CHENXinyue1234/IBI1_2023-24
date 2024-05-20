@@ -2,7 +2,7 @@
 density = 5
 # Begin with day 1
 day = 0
-#
+#density increases as the day goes on
 while density <= 90:
     # density double in a day
     density = 2*density
